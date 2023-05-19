@@ -1,0 +1,134 @@
+main#home section#banner #homeSlider .carousel-item {
+    min-height: 100vh !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
+main#home section#banner #homeSlider div.row {
+    min-height: 90vh !important;
+    padding-top: 15vh;
+    padding-bottom: 5vh
+}
+
+main#home section#banner #homeSlider .carousel-control-next-icon, main#home section#banner #homeSlider .carousel-control-prev-icon {
+    background-image: url('../img/arrow-right-before.svg') !important;
+    transition: .4s;
+    background-position: right !important;
+    height: 1.5rem;
+    background-repeat: no-repeat !important;
+}
+
+main#home section#banner #homeSlider .carousel-control-next-icon:hover, main#home section#banner #homeSlider .carousel-control-prev-icon:hover {
+    background-image: url('../img/arrow-right-after.svg') !important;
+    width: 4rem !important;
+    background-repeat: no-repeat !important;
+}
+
+main#home section#banner #homeSlider .carousel-control-prev-icon {
+    transform: rotate(180deg) !important;
+    background-position: left !important
+}
+
+main#home section#banner #homeSlider .carousel-control-next, main#home section#banner #homeSlider .carousel-control-prev {
+    justify-content: flex-start !important
+}
+
+main#home section#banner #nextSection a img:last-child {
+    opacity: 1 !important
+}
+
+main#home section#banner #nextSection a img {
+    opacity: 0;
+    width: 1.5rem;
+    transition: .4s
+}
+
+main#home section#banner #nextSection a:hover img {
+    opacity: 1
+}
+
+main#home section#nossos-imoveis #listaLocais .slick-active a.active {
+    background-color: transparent !important;
+    border: 0;
+    color: var(--verde) !important;
+    font-weight: 600
+}
+
+main#home section#nossos-imoveis #listaLocais a, main#home section#nossos-imoveis #listaLocais a:focus, main#home section#nossos-imoveis #listaLocais a:hover {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: 0
+}
+
+main#home section#banner #homeSlider .carousel-item:before {
+    content: "";
+    background: rgb(0 0 0 / 40%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0
+}
+
+main#home section#banner #homeSlider .carousel-item .container, main#home section#indique-experiencia .container {
+    z-index: 1;
+    position: relative
+}
+
+main#home section#indique-experiencia {
+    min-height: 50vh;
+    background-image: url('../img/img-indique.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+main#home section#indique-experiencia:before {
+    content: "";
+    background: rgb(0 0 0 / 48%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0
+}
+
+.underline-style {
+    border-bottom: 2px solid var(--verde);
+    display: inline-block !important;
+    padding-bottom: 1rem !important;
+    position: relative;
+    margin-bottom: 5rem !important
+}
+
+.underline-style:before {
+    content: "";
+    position: absolute;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 2px solid var(--verde);
+    bottom: -3.48rem;
+    left: 10%;
+    border-bottom-right-radius: 85%;
+    border-top: 3px solid #000;
+    background-color: #000
+}
+
+main#home section#video video {
+    min-height: 400px;
+    max-height: 60vh;
+    height: 60vh;
+    object-fit: cover;
+    object-position: center;
+    background-size: cover
+}
+.slick-list {
+    width: 100%;
+    margin-right: 10px !important;
+}
+
+

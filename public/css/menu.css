@@ -1,0 +1,50 @@
+@import url("simple-sidebar.css");
+
+.menu {
+    width: 100%;
+}
+
+.menu .sidebar{
+  width: auto;
+  height:auto;
+  padding-top: 1.5em !important;
+  padding-right: 0 !important;
+}
+
+.menu .sidebar .sidebar-body {
+  padding-right: 0;
+}
+
+.menu .sidebar .sidebar-button {
+  padding-right: 2em;
+  padding-left: 0px;
+  text-align: left;
+}
+
+.menu .custom-navbar {
+  left: 287px;
+  font-size: 18px;
+  padding: 1em;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+}
+
+.sb-sidenav-toggled .menu .custom-navbar{
+  left: 0;
+}
+
+@media (max-width: 765px) {
+  .menu .custom-navbar .title-page{
+    display: none;
+  }
+
+  .menu .custom-navbar {
+    left: 0;
+
+  }
+  
+  .sb-sidenav-toggled .menu .custom-navbar{
+    left: 240px;
+  }
+
+}

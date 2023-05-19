@@ -1,0 +1,72 @@
+#contact-banner{
+    margin-top: 10em !important;
+}
+
+
+.contact-banner {
+    text-align: left;
+    color: var(--color);
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat!important;;
+    background: url('https://placehold.co/1900x1080') fixed center;
+    border-radius: 25px;
+}
+
+#row-card {
+    position: relative;
+    margin-top: -100px;
+
+}
+
+#row-card .card {
+    position: relative;
+    border-radius: 25px;
+
+}
+.contacts-card {
+    border-radius: 18px;
+}
+
+.contacts-card-footer {
+    border-radius: 0px 0px 18px 18px !important;
+}
+.chevron-right {
+    display: none;
+}
+
+.contacts-card-footer a{
+    width: 100% !important;
+}
+
+.contacts-card-footer a:hover {
+    transform: translateX(-20px) scaleX(1.0);
+
+}
+
+.green-default {
+    background-color: var(--verde)!important;;
+}
+
+.icon-circle {
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50% !important;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1399px) {
+    .contacts-card {
+        height: 36rem !important;
+    }
+
+}

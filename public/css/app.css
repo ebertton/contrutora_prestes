@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+@import url("menu.css");
+@import url("user-manager.css");
+@import url("calendarios.css");
+@import url("relatorios.css");
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+input {
+    color: rgb(93, 93, 93) !important;
+}
+textarea {
+    color: rgb(93, 93, 93) !important;
+
+}
+
+.about-section {
+    padding-top: 20px;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.about-title {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.profile-button {
+    position: absolute;
+    bottom: 25px;
+}
+
+
+.dataTables_empty {
+    text-align: center;
+}
+
+.content {
+    margin-top: 14vh;
+}
+
+.nav2 {
+    overflow: auto;
+}
+
+.paginate_button{
+
+    background: linear-gradient(to bottom, white 0%, #dcdcdc 100%);
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 1.5em;
+    padding: 0.5em 1em;
+    margin-left: 5px;
+    text-align: center;
+    text-decoration: none ;
+    cursor: pointer;
+    color: #333 ;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    margin-top: 0;
+}
+
+#btn-pause {
+    display: none;
+}
+
+.dataTables_paginate{
+    float: right;
+    position: relative;
+    display: inline-block;
+}
+
+.dataTables_info{
+    position: relative;
+    display: inline-block;
+}
+
+.dataTables_filter{
+    float: right;
+    position: relative;
+    display: inline-block;
+}
+
+.dataTables_filter input{
+    display: inline-flex;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+
+}
+
+.dataTables_length{
+    display: flex;
+    align-items: center;
+    position: relative;
+    float: left;
+}
+
+
+
+.table-responsive{
+    width: 100%;
+
+}
+
+
+.datatable th {
+    font-weight: 400 !important;
+}
+
+.dataTables_paginate .current {
+    background: linear-gradient(to top, white 0%, #dcdcdc 100%) !important;
+}
+
+.search-icon{
+    color:#4d4c4c;
+}
+
+.dataTables_filter{
+  border: 0.1px solid grey;
+  border-radius: 5px;
+
+}
+
+.table-actions {
+    max-width: 50px;
+}
+
+#showPassword {
+    font-size: 25px;
+    cursor: pointer;
+}

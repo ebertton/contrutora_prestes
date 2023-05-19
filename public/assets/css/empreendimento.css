@@ -1,0 +1,294 @@
+main#empreendimento section#vendas .container {
+    position: relative;
+    z-index: 2;
+}
+
+main#empreendimento .before .plyr__poster:before {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 98;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .2)
+}
+
+main#empreendimento .before .plyr__video-wrapper {
+    position: relative
+}
+
+main#empreendimento .before div:not(.plyr--playing) .plyr__video-wrapper:after {
+    content: var(--titulo);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: max-content;
+    height: max-content;
+    z-index: 1;
+    font-size: calc(54 / var(--font-size) * 1rem) !important;
+    color: #fff;
+    position: absolute;
+    margin: auto
+}
+
+main#empreendimento section#emprendimento-single input, main#empreendimento section#emprendimento-single textarea {
+    border: 1px solid var(--grafite) !important;
+    color: var(--branco)
+}
+
+main#empreendimento section#emprendimento-single input:focus, main#empreendimento section#emprendimento-single textarea:focus {
+    border: 1px solid var(--ciano) !important
+}
+
+main#empreendimento section#emprendimento-single #menu-empreendimento a {
+    border-bottom: .5rem solid transparent !important;
+    padding-bottom: .5rem !important
+}
+
+main#empreendimento section#emprendimento-single #menu-empreendimento a:hover {
+    border-bottom: .5rem solid var(--verde) !important
+}
+
+main#empreendimento section#emprendimento-single .img-empreendimento {
+    display: inline-block
+}
+
+main#empreendimento section#emprendimento-single .img-empreendimento:before {
+    content: '';
+    width: 8rem;
+    max-width: 14vw;
+    max-height: 14vw;
+    height: 8rem;
+    background: var(--verde);
+    position: absolute;
+    left: -18%;
+    bottom: 10%;
+    border-bottom-right-radius: 100%
+}
+
+main#empreendimento section#informacoes #scroll {
+    overflow: hidden;
+    max-height: 60vh;
+    cursor: move
+}
+
+main#empreendimento section#informacoes .blue {
+    height: auto;
+    min-height: 100%;
+    width: 100%;
+    max-height: 90vh;
+    object-fit: cover;
+    object-position: center
+}
+
+main#empreendimento section#informacoes .topicos ol {
+    counter-reset: item;
+    list-style-type: none
+}
+
+main#empreendimento section#informacoes .topicos li {
+    display: flex;
+    gap: 1rem
+}
+
+main#empreendimento section#informacoes .topicos li span {
+    background-color: var(--verde);
+    font-weight: 700;
+    font-size: calc(20 / var(--font-size) * 1rem) !important;
+    color: var(--ciano);
+    width: 2rem;
+    min-width: 2rem;
+    height: 2rem;
+    min-height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+main#empreendimento section#informacoes .topicos .d-grid {
+    grid-template-columns:1fr 1fr
+}
+
+main#empreendimento section#plantas #tabPlantas a {
+    background-color: transparent !important;
+    border: 1px solid #707070;
+    border-radius: 2.5rem
+}
+
+main#empreendimento section#plantas #tabPlantas a.active, main#empreendimento section#plantas #tabPlantas a:hover {
+    background-color: var(--verde) !important;
+    border: 1px solid var(--verde);
+    border-radius: 2.5rem;
+    font-weight: 700;
+    color: var(--ciano) !important
+}
+
+main#empreendimento section#status .progresso .progress {
+    height: .8rem !important;
+    overflow: unset !important;
+    position: relative
+}
+
+main#empreendimento section#status .progresso .progress:before {
+    content: 'Torre';
+    left: 0
+}
+
+main#empreendimento section#status .progresso .progress:after, main#empreendimento section#status .progresso .progress:before {
+    position: absolute;
+    top: -3rem;
+    font-size: calc(22 / var(--font-size) * 1rem) !important;
+    font-weight: 700
+}
+
+main#empreendimento section#status .progresso .progress:after {
+    right: 0;
+    content: 'Entrega'
+}
+
+main#empreendimento section#status .progresso .progress-bar {
+    background: var(--verde) !important;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 299;
+    overflow: unset !important
+}
+
+main#empreendimento section#status .progresso .progress-bar:before {
+    content: attr(data-content) '%';
+    position: absolute;
+    right: 0;
+    bottom: -1.7rem;
+    z-index: 9999 !important;
+    font-weight: 700
+}
+
+main#empreendimento section#status .etapas {
+    --etapaProgress: 0
+}
+
+main#empreendimento section#status .etapas:before {
+    content: '';
+    position: absolute;
+    width: .2rem;
+    left: .5rem;
+    height: 100%;
+    border-radius: 2rem;
+    background-color: var(--cinza-claro)
+}
+
+main#empreendimento section#status .etapas:after {
+    content: '';
+    position: absolute;
+    width: .2rem;
+    left: .5rem;
+    height: var(--etapaProgress);
+    border-radius: 2rem;
+    background-color: var(--verde)
+}
+
+main#empreendimento section#status .etapa .bullet {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: var(--cinza-claro)
+}
+
+main#empreendimento section#status .etapa.concluido .bullet {
+    background-color: var(--verde) !important
+}
+
+main#empreendimento section#status .etapa.concluido p {
+    color: var(--verde) !important;
+    color: var(--cinza-claro);
+    font-size: 1rem;
+    font-weight: 700
+}
+
+main#empreendimento section#imagens #carouselAreaComum img {
+    width: 100%;
+    height: 543px;
+    max-height: 60vw;
+    object-fit: cover;
+    object-position: center
+}
+
+main#empreendimento section#indique-experiencia .container {
+    position: relative;
+    z-index: 1
+}
+
+main#empreendimento section#indique-experiencia {
+    min-height: 50vh;
+    background-image: url('../img/img-indique.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+main#empreendimento section#indique-experiencia:before {
+    content: "";
+    background: rgb(0 0 0 / 48%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0
+}
+
+main#empreendimento section#localizacao iframe {
+    border-radius: 1rem
+}
+
+main#empreendimento section#vendas {
+    min-height: 30vh
+}
+
+main#empreendimento section#vendas:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url('../img/grafismo-resultado-busca.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+@media screen and (max-width: 767px) {
+    main#empreendimento .before div:not(.plyr--playing) .plyr__video-wrapper:after {
+        font-size: calc(34 / var(--font-size) * 1rem) !important
+    }
+}
+
+section#imagens a[data-gallery=example-gallery] {
+    display: none
+}
+
+section#imagens a[data-gallery=example-gallery] img.img-fluid.rounded-3 {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 300px;
+    max-height: 24vw;
+    width: 100%
+}
+
+section#imagens a[data-gallery=common-gallery] {
+    display: none
+}
+
+section#imagens a[data-gallery=common-gallery] img.img-fluid.rounded-3 {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 300px;
+    max-height: 24vw;
+    width: 100%
+}
